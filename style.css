@@ -7,6 +7,7 @@ body {
 	color: #333333;
 	margin: 0 auto 300px auto;
 	width: 900px;
+  transition: background-color 1s;
 }
 
 header {
@@ -16,6 +17,11 @@ header {
   width: 100%;
   overflow: hidden;
   padding: 40px;
+  transition: top 2s;
+}
+
+header.hide {
+  top: -100px;
 }
 
 h1 {
@@ -25,7 +31,6 @@ h1 {
 
 nav {
   float: right;
-  margin-right: 60px;
 }
 
 nav a {
@@ -44,8 +49,25 @@ section img {
   height: 600px;
 }
 
-.process{
+div.progress {
   position: fixed;
-  top:8px;
-  left: 8px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  font-size: 12px;
 }
+
+div.progress div.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background-color: #7fdbff;
+}
+
+
+
+
+
